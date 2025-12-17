@@ -1,0 +1,32 @@
+/* ImpactCarousel.css */
+
+/* Custom cursor for all interactive carousel elements */
+.impact-carousel .ant-card,
+.impact-carousel .ant-card-cover img,
+.impact-carousel .slick-prev,
+.impact-carousel .slick-next,
+.impact-carousel .slick-dots li button {
+  cursor: url('/cursors/leaf_cursor.svg'), auto;
+}
+
+/* Optional: slightly larger clickable area for arrows */
+.impact-carousel .slick-prev,
+.impact-carousel .slick-next {
+  z-index: 10;
+}
+
+/* Keep arrow icons visible */
+.impact-carousel .slick-prev::before,
+.impact-carousel .slick-next::before {
+  color: #006a5c; /* matches your flashcard theme */
+  font-size: 24px;
+}
+
+/* Optional: adjust dots color to match your theme */
+.impact-carousel .slick-dots li button {
+  background-color: #b7f5e7;
+}
+
+.impact-carousel .slick-dots li.slick-active button {
+  background-color: #006a5c;
+}

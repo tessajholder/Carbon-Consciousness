@@ -1,0 +1,37 @@
+.button {
+  background-color: #00796b;       /* Teal base color */
+  color: #ffffff;                  /* White text */
+  font-weight: 600;                /* Semi-bold */
+  font-size: 1.5rem;               /* 24px (≈ Tailwind text-2xl) */
+  padding: 15px 40px;              /* Comfortable spacing */
+  border: 2px solid #006a5c;
+  border-radius: 12px;             /* Rounded corners */
+  cursor: url('/public/cursors/leaf_cursor.svg'), auto;
+  transition: all 0.3s ease;       /* Smooth hover transition */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #004d40;       /* Darker teal on hover */
+  transform: translateY(-2px);     /* Slight lift */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 2 px solid #006a5c;
+}
+
+/* Active (when clicked) */
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus (keyboard accessibility) */
+.button:focus {
+  outline: 3px solid #b2dfdb;
+  outline-offset: 3px;
+}
